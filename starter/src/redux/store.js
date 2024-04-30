@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import todoReducer from './todoSlide'
+import todoReducer from './todoSlide';
 
 export default configureStore({
     reducer: {
-        todo: todoReducer,
+        todos: todoReducer,
     }
 })
