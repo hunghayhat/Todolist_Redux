@@ -11,7 +11,8 @@ const TodoList = () => {
 	const todos = useSelector((state) => state.todos);
 
 	useEffect(() => {
-		dispatch(getTodosAsync())
+		dispatch(getTodosAsync());
+		// dispatch(addTodoAsync())
 	}, [dispatch]);
 
 	// const todos = [
