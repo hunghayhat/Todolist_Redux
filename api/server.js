@@ -1,11 +1,11 @@
-const express = require('express');
-const dotenv = require('dotenv');
-const colors = require('colors');
-const cors = require('cors');
-const { json } = require('body-parser');
+const express = require('express'); 		//framework để tạo server và quản lý route
+const dotenv = require('dotenv');			// module để quản lý các biến môi trường từ file .env
+const colors = require('colors');	
+const cors = require('cors'); 				// cho phép các request từ các domain khác
+const { json } = require('body-parser');	// middleware để phân tích JSON request body
 const { nanoid } = require('nanoid');
 
-dotenv.config({ path: './config.env' });
+dotenv.config({ path: './config.env' });	// cấu hình biến môi trường
 
 const app = express();
 
