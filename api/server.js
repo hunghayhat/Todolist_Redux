@@ -9,8 +9,8 @@ dotenv.config({ path: './config.env' });	// cấu hình biến môi trường
 
 const app = express();
 
-app.use(cors());
-app.use(json());
+app.use(cors()); 	// cho phép các request từ domain khác
+app.use(json());	// phân tích request body nếu nó có định dạng json
 
 let todos = [
 	{

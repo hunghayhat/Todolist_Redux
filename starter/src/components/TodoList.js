@@ -7,12 +7,10 @@ const TodoList = () => {
 
 	const dispatch = useDispatch();
 
-	// const todos = useSelector((state) => state.todos );
 	const todos = useSelector((state) => state.todos);
 
 	useEffect(() => {
 		dispatch(getTodosAsync());
-		// dispatch(addTodoAsync())
 	}, [dispatch]);
 
 	// const todos = [
